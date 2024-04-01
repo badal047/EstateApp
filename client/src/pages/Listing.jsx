@@ -50,7 +50,8 @@ export default function Listing() {
   console.log(loading);
 
   return (
-    <main>
+
+    <main className='mt-16 pt-10' >
       {loading && <p className='text-center my-7 text-2xl'>Loading...</p>}
       {error && (
         <p className='text-center my-7 text-2xl'>Something went wrong!</p>
@@ -145,5 +146,6 @@ export default function Listing() {
         </div>
       )}
     </main>
+
   );
 }

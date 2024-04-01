@@ -1,0 +1,260 @@
+/* Mobile - 360px */
+@media only screen and (min-width: 0rem) {
+    #faq-1263 {
+        padding: calc(var(--sectionPadding) + 100px); /* Adjust the padding to create space for the header */
+        background-color: #14142b;
+        position: relative;
+        overflow: hidden;
+        z-index: 1;
+    }
+    #faq-1263 .cs-container {
+        width: 100%;
+        max-width: 80rem;
+        position: relative;
+        margin: auto;
+        padding-top: 90px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        /* 40px - 48px */
+        gap: clamp(2.5rem, 5vw, 3rem);
+    }
+    #faq-1263 .cs-content {
+        /* set text align to left if content needs to be left aligned */
+        text-align: center;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        /* centers content horizontally, set to flex-start to left align */
+        align-items: center;
+    }
+
+    #faq-1263 .cs-title {
+        margin: 0;
+        color: var(--bodyTextColorWhite);
+    }
+    #faq-1263 .cs-faq-group {
+        width: 100%;
+        max-width: 52.875rem;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        /* 16px - 20px */
+        gap: clamp(1rem, 2.4vw, 1.25rem);
+    }
+    #faq-1263 .cs-faq-item {
+        list-style: none;
+        width: 100%;
+        background-color: #303044;
+        border-radius: 0.5rem;
+        padding: 0;
+        box-sizing: border-box;
+        transition: border-bottom 0.3s;
+    }
+    #faq-1263 .cs-faq-item.active .cs-button {
+        color: var(--primary);
+    }
+    #faq-1263 .cs-faq-item.active .cs-button:before {
+        background-color: var(--primary);
+        transform: rotate(315deg);
+    }
+    #faq-1263 .cs-faq-item.active .cs-button:after {
+        background-color: var(--primary);
+        transform: rotate(-315deg);
+    }
+    #faq-1263 .cs-faq-item.active .cs-item-p {
+        height: auto;
+        margin-top: 0.75rem;
+        /* 16px - 24px */
+        padding-top: 0.75rem;
+        padding-bottom: 1.5rem;
+        color: var(--bodyTextColorWhite);
+        opacity: 0.8;
+    }
+    #faq-1263 .cs-faq-item.active .cs-item-p:before {
+        /* border top */
+        content: "";
+        height: 1px;
+        background: #7d799c;
+        opacity: 1;
+        position: absolute;
+        display: block;
+        top: 0;
+        left: 1.5rem;
+        right: 1.5rem;
+    }
+    #faq-1263 .cs-button {
+        /* 16px - 20px */
+        font-size: clamp(1rem, 2vw, 1.25rem);
+        line-height: 1.2em;
+        text-align: left;
+        font-weight: bold;
+        width: 100%;
+        padding: 1.5rem 1.5rem 0;
+        border: none;
+        background: transparent;
+        color: var(--bodyTextColorWhite);
+        overflow: hidden;
+        display: flex;
+        justify-content: flex-start;
+        align-items: stretch;
+        /* 16px - 24px */
+        gap: clamp(1rem, 2.5vw, 1.5rem);
+        position: relative;
+        transition:
+            background-color 0.3s,
+            color 0.3s;
+    }
+    #faq-1263 .cs-button:hover {
+        cursor: pointer;
+    }
+    #faq-1263 .cs-button:before {
+        /* left line */
+        content: "";
+        width: 0.5rem;
+        height: 0.125rem;
+        background-color: var(--bodyTextColorWhite);
+        opacity: 1;
+        border-radius: 50%;
+        position: absolute;
+        display: block;
+        top: 67%;
+        right: 1.1875rem;
+        transform: rotate(45deg);
+        /* animate the transform from the left side of the x axis, and the center of the y */
+        transform-origin: left center;
+        transition: transform 0.5s;
+    }
+    #faq-1263 .cs-button:after {
+        /* right line */
+        content: "";
+        width: 0.5rem;
+        height: 0.125rem;
+        background-color: var(--bodyTextColorWhite);
+        opacity: 1;
+        border-radius: 50%;
+        position: absolute;
+        display: block;
+        top: 67%;
+        right: 1rem;
+        transform: rotate(-45deg);
+        /* animate the transform from the right side of the x axis, and the center of the y */
+        transform-origin: right center;
+        transition: transform 0.5s;
+    }
+    #faq-1263 .cs-button-text {
+        width: 90%;
+        padding: 0;
+        display: block;
+    }
+    #faq-1263 .cs-item-p {
+        /* 14px - 16px */
+        font-size: clamp(0.875rem, 1.5vw, 1rem);
+        line-height: 1.5em;
+        width: 100%;
+        height: 0;
+        margin: 0;
+        /* 16px - 24px */
+        padding: 0 1.5rem 1.5rem;
+        /* prevents padding and border from affecting height and width */
+        box-sizing: border-box;
+        opacity: 0;
+        color: var(--bodyTextColor);
+        /* clips the text so it doesn't show up */
+        overflow: hidden;
+        position: relative;
+        transition:
+            opacity 0.3s,
+            padding-bottom 0.3s,
+            padding-top 0.3s;
+    }
+    #faq-1263 .cs-background {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+    }
+    #faq-1263 .cs-background img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        position: relative;
+        top: 0;
+        left: 0;
+    }
+}
+
+:root {
+    /* Add these styles to your global stylesheet, which is used across all site pages. You only need to do this once. All elements in the library derive their variables and base styles from this central sheet, simplifying site-wide edits. For instance, if you want to modify how your h2's appear across the site, you just update it once in the global styles, and the changes apply everywhere. */
+    --primary: #ff6a3e;
+    --primaryLight: #ffba43;
+    --secondary: #ffba43;
+    --secondaryLight: #ffba43;
+    --headerColor: #1a1a1a;
+    --bodyTextColor: #4e4b66;
+    --bodyTextColorWhite: #fafbfc;
+    /* 13px - 16px */
+    --topperFontSize: clamp(0.8125rem, 1.6vw, 1rem);
+    /* 31px - 49px */
+    --headerFontSize: clamp(1.9375rem, 3.9vw, 3.0625rem);
+    --bodyFontSize: 1rem;
+    /* 60px - 100px top and bottom */
+    --sectionPadding: clamp(3.75rem, 7.82vw, 6.25rem) 1rem;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+*, *:before, *:after {
+    /* prevents padding from affecting height and width */
+    box-sizing: border-box;
+}
+.cs-topper {
+    font-size: var(--topperFontSize);
+    line-height: 1.2em;
+    text-transform: uppercase;
+    text-align: inherit;
+    letter-spacing: .1em;
+    font-weight: 700;
+    color: var(--primary);
+    margin-bottom: 0.25rem;
+    display: block;
+}
+
+.cs-title {
+    font-size: var(--headerFontSize);
+    font-weight: 900;
+    line-height: 1.2em;
+    text-align: inherit;
+    max-width: 43.75rem;
+    margin: 0 0 1rem 0;
+    color: var(--headerColor);
+    position: relative;
+}
+
+.cs-text {
+    font-size: var(--bodyFontSize);
+    line-height: 1.5em;
+    text-align: inherit;
+    width: 100%;
+    max-width: 40.625rem;
+    margin: 0;
+    color: var(--bodyTextColor);
+}
+
+/* Adjustments to prevent overlap with header */
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000; /* Ensure header is above FAQ section */
+}
+

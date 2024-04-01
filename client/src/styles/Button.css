@@ -1,0 +1,38 @@
+/* Global styles */
+
+  
+  /* Styles for the wrapper containing the button */
+  .wrapperbtn {
+    position: relative; /* Change to relative positioning */
+    margin: 0 auto; /* Center the wrapper horizontally */
+    width: max-content; /* Set width to fit content */
+  }
+  
+  /* Styles for the button */
+  btn {
+    display: inline-block; /* Change to inline-block */
+    padding: 10px 20px; /* Adjust padding as needed */
+    font-size: 16px; /* Adjust font size as needed */
+    font-family: 'Lato', sans-serif;
+    font-weight: bold; /* Ensure text is bold */
+    text-decoration: none;
+    color: #333;
+    background-color: #f0f0f0; /* Change background color as needed */
+    border: 2px solid #333;
+    border-radius: 5px; /* Add border radius for rounded corners */
+    transition: background-color 0.3s, color 0.3s; /* Smooth transition for hover effect */
+  }
+  
+  /* Hover styles for the button */
+  btn:hover {
+    background-color: #333; /* Change background color on hover */
+    color: #fff; /* Change text color on hover */
+  }
+  
+  /* Icon styles */
+  .icon {
+    display: inline-block; /* Ensure icon is inline with button text */
+    margin-left: 10px; /* Adjust margin between button text and icon */
+    vertical-align: middle; /* Align icon vertically with button text */
+  }
+  

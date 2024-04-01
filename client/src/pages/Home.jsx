@@ -5,6 +5,8 @@ import { Navigation } from 'swiper/modules';
 import SwiperCore from 'swiper';
 import 'swiper/css/bundle';
 import ListingItem from '../components/ListingItem';
+import '../styles/Typewriter.css'
+import '../styles/Button.css'
 
 
 export default function Home() {
@@ -51,22 +53,39 @@ export default function Home() {
     <div>
       {/* top */}
       <div className='flex flex-col gap-6 p-28 px-3 max-w-6xl mx-auto'>
-        <h1 className='text-slate-700 font-bold text-3xl lg:text-6xl'>
-          Find your next <span className='text-slate-500'>perfect</span>
-          <br />
-          place with ease
+        <h1 className='text-slate-700 font-bold text-3xl lg:text-6xl typewriter typing-animation py-3 '>
+          UrbanNest: City living,
+          <span className='text-slate-500'>elevated.</span>
+          {/* <br /> */}
         </h1>
-        <div className='text-gray-400 text-xs sm:text-sm'>
+
+
+        {/* <div className='text-gray-400 text-xs sm:text-sm'>
           Sahand Estate is the best place to find your next perfect place to
           live.
           <br />
           We have a wide range of properties for you to choose from.
+        </div> */}
+        <div className=" px-4 py-8 justify-center">
+          <p className="text-2xl font-bold  text-gray-800 mb-1.5 ">
+          Tired of endless searches and overwhelming listings?
+          </p>
+          <p className="text-lg lg:text-xl text-gray-600">
+            UrbanNest is your one-stop shop for navigating the exciting world of city living.
+            <br />UrbanNest simplifies your journey by curating a collection of exceptional urban properties, from cozy studios to chic high-rises.Finding your dream city home shouldn't be stressful. With UrbanNest, it's just a few clicks away. 
+            
+            {/* <br />Let us unlock the possibilities of city living and help you find your perfect urban nest */}
+          </p>
         </div>
         <Link
           to={'/search'}
-          className='text-xs sm:text-sm text-blue-800 font-bold hover:underline'
+          className='text-xs sm:text-sm text-blue-800 font-bold hover:underline text-center'
         >
-          Let's get started...
+          
+          <div className="wrapperbtn " >
+            <btn ><span>Lets Get Started!</span></btn>
+          </div>
+
         </Link>
       </div>
 
@@ -75,14 +94,14 @@ export default function Home() {
         {offerListings &&
           offerListings.length > 0 &&
           offerListings.map((listing) => (
-            <SwiperSlide>
+            <SwiperSlide  key={listing._id}>
               <div
                 style={{
                   background: `url(${listing.imageUrls[0]}) center no-repeat`,
                   backgroundSize: 'cover',
                 }}
                 className='h-[500px]'
-                key={listing._id}
+                
               ></div>
             </SwiperSlide>
           ))}
