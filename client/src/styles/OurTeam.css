@@ -1,0 +1,296 @@
+/*-- -------------------------- -->
+<---       Meet The Team        -->
+<--- -------------------------- -*/
+
+/* Mobile - 360px */
+@media only screen and (min-width: 0rem) {
+    #meet-team-1332 {
+        padding: var(--sectionPadding);
+        overflow: hidden;
+    }
+    #meet-team-1332 .cs-container {
+        width: 100%;
+        max-width: 90rem;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        /* 48px - 64px */
+        gap: clamp(3rem, 6vw, 4rem);
+    }
+    #meet-team-1332 .cs-content {
+        /* set text align to left if content needs to be left aligned */
+        text-align: center;
+        width: 100%;
+        max-width: 40.625rem;
+        display: flex;
+        flex-direction: column;
+        /* centers content horizontally, set to flex-start to left align */
+        align-items: center;
+    }
+    #meet-team-1332 .cs-topper {
+        font-size: var(--topperFontSize);
+        line-height: 1.2em;
+        text-transform: uppercase;
+        text-align: inherit;
+        letter-spacing: 0.1em;
+        font-weight: 700;
+        color: var(--primary);
+        margin-bottom: 0.25rem;
+        display: block;
+    }
+    #meet-team-1332 .cs-title {
+        font-size: var(--headerFontSize);
+        font-weight: 900;
+        line-height: 1.2em;
+        text-align: inherit;
+        max-width: 43.75rem;
+        margin: 0 0 1rem 0;
+        color: var(--headerColor);
+        position: relative;
+    }
+    #meet-team-1332 .cs-color {
+        color: var(--primary);
+    }
+    #meet-team-1332 .cs-text {
+        font-size: var(--bodyFontSize);
+        line-height: 1.5em;
+        text-align: inherit;
+        width: 100%;
+        max-width: 40.625rem;
+        margin: 0;
+        color: var(--bodyTextColor);
+    }
+    #meet-team-1332 .cs-card-group {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        /* 16px - 20px */
+        gap: clamp(1rem, 2.3vw, 1.25rem);
+        position: relative;
+    }
+    #meet-team-1332 .cs-item {
+        list-style: none;
+        width: 100%;
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: center;
+        position: relative;
+    }
+    #meet-team-1332 .cs-item:hover {
+        cursor: pointer;
+    }
+    #meet-team-1332 .cs-item:hover .cs-picture:before {
+        opacity: 1;
+    }
+    #meet-team-1332 .cs-item:hover .cs-picture img {
+        transform: scale(1.1);
+    }
+    #meet-team-1332 .cs-item:hover .cs-name {
+        color: #eda708;
+    }
+    #meet-team-1332 .cs-picture {
+        width: 100%;
+        /* 320px - 412px */
+        height: clamp(20rem, 90vw, 25.75rem);
+        /* clips img tag from overflowing it on hover */
+        overflow: hidden;
+        display: block;
+        position: relative;
+        z-index: 1;
+    }
+    #meet-team-1332 .cs-picture:before {
+        /* defualt gradient */
+        content: "";
+        width: 100%;
+        height: 50%;
+        background: -moz-linear-gradient(
+            top,
+            rgba(0, 0, 0, 0) 0%,
+            rgba(17, 17, 17, 0.94) 65%,
+            rgba(26, 26, 26, 0.94) 100%
+        );
+        /* FF3.6-15 */
+        background: -webkit-linear-gradient(
+            top,
+            rgba(0, 0, 0, 0) 0%,
+            rgba(17, 17, 17, 0.94) 65%,
+            rgba(26, 26, 26, 0.94) 100%
+        );
+        /* Chrome10-25,Safari5.1-6 */
+        background: linear-gradient(
+            to bottom,
+            rgba(0, 0, 0, 0) 0%,
+            rgba(17, 17, 17, 0.94) 65%,
+            rgba(26, 26, 26, 0.94) 100%
+        );
+        opacity: 1;
+        position: absolute;
+        display: block;
+        bottom: 0;
+        left: 0;
+        transition: opacity 0.3s;
+    }
+    #meet-team-1332 .cs-picture img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        /* makes sure the top of the image is at the top of the parent, heads won't get cut off this way */
+        object-position: top;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+        transition: transform 0.7s;
+    }
+    #meet-team-1332 .cs-info {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: absolute;
+        bottom: 1.5rem;
+        left: 0;
+        z-index: 10;
+    }
+    #meet-team-1332 .cs-name {
+        /* 20px - 25px */
+        font-size: 1.25rem;
+        line-height: 1.2em;
+        font-weight: 700;
+        margin: 0 0 0.25rem 0;
+        color: #f6e5db;
+        display: block;
+        transition: color 0.3s;
+    }
+    #meet-team-1332 .cs-job {
+        /* 14px - 16px */
+        font-size: clamp(0.875rem, 1.5vw, 1rem);
+        line-height: 1.5em;
+        margin-right: 0;
+        color: #f7f7f7;
+        display: block;
+    }
+}
+/* In-between - 550px */
+@media only screen and (min-width: 34.375rem) {
+    #meet-team-1332 .cs-card-group {
+        align-items: stretch;
+    }
+    #meet-team-1332 .cs-item {
+        width: 48.3%;
+    }
+}
+/* Tablet - 768px */
+@media only screen and (min-width: 48rem) {
+    #meet-team-1332 .cs-item {
+        width: 31.7%;
+    }
+}
+/* Large Desktop - 1200px */
+@media only screen and (min-width: 75rem) {
+    #meet-team-1332 .cs-card-group {
+        flex-wrap: nowrap;
+        justify-content: space-between;
+    }
+    #meet-team-1332 .cs-item {
+        width: 100%;
+    }
+    #meet-team-1332 .cs-item:hover .cs-picture:before {
+        opacity: 1;
+    }
+    #meet-team-1332 .cs-item:hover .cs-info {
+        opacity: 1;
+        bottom: 1.5rem;
+    }
+    #meet-team-1332 .cs-item:hover .cs-name,
+    #meet-team-1332 .cs-item:hover .cs-job {
+        transform: translateY(0);
+    }
+    #meet-team-1332 .cs-picture:before {
+        opacity: 0;
+    }
+    #meet-team-1332 .cs-info {
+        opacity: 0;
+        bottom: -3.125rem;
+        transition:
+            opacity 0.3s,
+            bottom 0.6s;
+    }
+    #meet-team-1332 .cs-name,
+    #meet-team-1332 .cs-job {
+        transform: translateY(1rem);
+        transition:
+            color 0.3s,
+            transform 0.3s;
+    }
+    #meet-team-1332 .cs-job {
+        transition: transform 0.9s;
+    }
+}
+
+:root {
+    /* Add these styles to your global stylesheet, which is used across all site pages. You only need to do this once. All elements in the library derive their variables and base styles from this central sheet, simplifying site-wide edits. For instance, if you want to modify how your h2's appear across the site, you just update it once in the global styles, and the changes apply everywhere. */
+    --primary: #ff6a3e;
+    --primaryLight: #ffba43;
+    --secondary: #ffba43;
+    --secondaryLight: #ffba43;
+    --headerColor: #1a1a1a;
+    --bodyTextColor: #4e4b66;
+    --bodyTextColorWhite: #fafbfc;
+    /* 13px - 16px */
+    --topperFontSize: clamp(0.8125rem, 1.6vw, 1rem);
+    /* 31px - 49px */
+    --headerFontSize: clamp(1.9375rem, 3.9vw, 3.0625rem);
+    --bodyFontSize: 1rem;
+    /* 60px - 100px top and bottom */
+    --sectionPadding: clamp(3.75rem, 7.82vw, 6.25rem) 1rem;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+*, *:before, *:after {
+    /* prevents padding from affecting height and width */
+    box-sizing: border-box;
+}
+.cs-topper {
+    font-size: var(--topperFontSize);
+    line-height: 1.2em;
+    text-transform: uppercase;
+    text-align: inherit;
+    letter-spacing: .1em;
+    font-weight: 700;
+    color: var(--primary);
+    margin-bottom: 0.25rem;
+    display: block;
+}
+
+.cs-title {
+    font-size: var(--headerFontSize);
+    font-weight: 900;
+    line-height: 1.2em;
+    text-align: inherit;
+    max-width: 43.75rem;
+    margin: 0 0 1rem 0;
+    color: var(--headerColor);
+    position: relative;
+}
+
+.cs-text {
+    font-size: var(--bodyFontSize);
+    line-height: 1.5em;
+    text-align: inherit;
+    width: 100%;
+    max-width: 40.625rem;
+    margin: 0;
+    color: var(--bodyTextColor);
+}
+                            

@@ -13,6 +13,9 @@ import Listing from './pages/Listing';
 import Search from './pages/Search';
 import Faq from './pages/Faq';
 import ContactUs from './pages/ContactUs';
+import Testimonials from './pages/Testimonials';
+import OurServices from './pages/OurServices';
+import OurTeam from './pages/OurTeam';
 
 function App() {
   return (
@@ -23,8 +26,11 @@ function App() {
         <Route path='/sign-in' element={<SignIn />} />
         <Route path='/sign-up' element={<SignUp />} />
         <Route path='/about' element={<About />} />
+        <Route path='/our-services' element={<OurServices />} />
+        <Route path='/our-team' element={<OurTeam />} />
         <Route path='/contact-us' element={<ContactUs />} />
         <Route path='/faq' element={<Faq />} />
+        <Route path='/testimonials' element={<Testimonials />} />
         <Route path='/search' element={<Search />} />
         <Route path='/listing/:listingId' element={<Listing />} />
         <Route element={<PrivateRoute />}>

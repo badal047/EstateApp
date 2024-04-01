@@ -7,7 +7,7 @@ import 'swiper/css/bundle';
 import ListingItem from '../components/ListingItem';
 import '../styles/Typewriter.css'
 import '../styles/Button.css'
-
+import Statistics from '../components/Statistics'
 
 export default function Home() {
   const [offerListings, setOfferListings] = useState([]);
@@ -150,6 +150,8 @@ export default function Home() {
           </div>
         )}
       </div>
+
+      <Statistics/>
     </div>
   );
 }

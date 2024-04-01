@@ -36,6 +36,16 @@ const Faq = () => {
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit convallis nunc neque, bibendum pulvinar vitae commodo velit. Proin diam tortor sed malesuada nunc, habitant. Dignissim ipsum porta enim, magna urna, quam.
                         </p>
                     </li>
+                    <li className={`cs-faq-item ${activeItem === 2 ? 'active' : ''}`} onClick={() => toggleItem(2)}>
+                        <button className="cs-button">
+                            <span className="cs-button-text">
+                                What is your plan cancellation policy?
+                            </span>
+                        </button>
+                        <p className="cs-item-p">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit convallis nunc neque, bibendum pulvinar vitae commodo velit. Proin diam tortor sed malesuada nunc, habitant. Dignissim ipsum porta enim, magna urna, quam.
+                        </p>
+                    </li>
                     {/* Add more FAQ items similarly */}
                 </ul>
             </div>

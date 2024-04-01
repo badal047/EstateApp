@@ -2,6 +2,7 @@ import { FaSearch } from 'react-icons/fa';
 import { Link, useNavigate } from 'react-router-dom';
 import { useSelector } from 'react-redux';
 import { useEffect, useState } from 'react';
+import Dropdown  from './Dropdown';
 
 export default function Header() {
   const { currentUser } = useSelector((state) => state.user);
@@ -26,10 +27,27 @@ export default function Header() {
     <header className='bg-slate-200 shadow-md fixed w-full '>
       <div className='flex justify-between items-center max-w-6xl mx-auto p-3'>
         <Link to='/'>
-          <h1 className='font-bold text-sm sm:text-xl flex flex-wrap bg-gray-200 p-2 rounded-md shadow-md'>
-            <span className='text-slate-500'>Urban</span>
-            <span className='text-slate-700'>Nest.</span>
-          </h1>
+          
+          <div>
+            {/* Include Google Fonts */}
+            <link rel="preconnect" href="https://fonts.gstatic.com" />
+            <link href="https://fonts.googleapis.com/css2?family=Alex+Brush&display=swap" rel="stylesheet"  />
+            
+            {/* Your JSX content */}
+            <div>
+            <h1 style={{fontFamily: '"Alex Brush", cursive',fontWeight: 600,fontStyle: 'normal',fontSize: '32px'}}>
+              <div className='flex flex-wrap bg-gray-200 p-1 rounded-md shadow-md'>
+                <span className='black '>Urban</span>
+                <span className='black'>Nest.</span>
+              </div>
+            </h1>
+          </div>
+                {/* <h1 className='font-bold text-sm sm:text-xl flex flex-wrap bg-gray-200 p-2 rounded-md shadow-md'>
+                
+              </h1> */}
+          </div>
+
+
         </Link>
         <form
           onSubmit={handleSubmit}
@@ -48,11 +66,11 @@ export default function Header() {
         </form>
         <ul className='flex gap-4'>
           <Link to='/'>
-            <li className='hidden sm:inline text-slate-700 hover:underline'>
-              Home
+            <li className='hidden sm:inline text-slate-700 hover:font-semibold px-1'>
+              HOME
             </li>
           </Link>
-          <Link to='/faq'>
+          {/* <Link to='/faq'>
             <li className='hidden sm:inline text-slate-700 hover:underline'>
               FAQs
             </li>
@@ -66,7 +84,15 @@ export default function Header() {
             <li className='hidden sm:inline text-slate-700 hover:underline'>
               ContactUs
             </li>
+          </Link> */}
+          <Link to='/create-listing'>
+            <li className='hidden sm:inline text-slate-700 hover:font-semibold px-1'>
+              POST PROPERTY
+            </li>
           </Link>
+
+          
+
           <Link to='/profile'>
             {currentUser ? (
               <img
@@ -78,7 +104,8 @@ export default function Header() {
               <li className=' text-slate-700 hover:underline'> Sign in</li>
             )}
           </Link>
-
+          
+          <Dropdown/>
         </ul>
       </div>
     </header>
