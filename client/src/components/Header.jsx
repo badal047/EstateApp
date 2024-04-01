@@ -24,7 +24,7 @@ export default function Header() {
     }
   }, [location.search]);
   return (
-    <header className='bg-slate-200 shadow-md fixed w-full '>
+    <header className=' shadow-md fixed w-full ' >
       <div className='flex justify-between items-center max-w-6xl mx-auto p-3'>
         <Link to='/'>
           
@@ -36,7 +36,7 @@ export default function Header() {
             {/* Your JSX content */}
             <div>
             <h1 style={{fontFamily: '"Alex Brush", cursive',fontWeight: 600,fontStyle: 'normal',fontSize: '32px'}}>
-              <div className='flex flex-wrap bg-gray-200 p-1 rounded-md shadow-md'>
+              <div className='flex flex-wrap bg-orange-400 p-1 rounded-md shadow-md'>
                 <span className='black '>Urban</span>
                 <span className='black'>Nest.</span>
               </div>
@@ -51,49 +51,36 @@ export default function Header() {
         </Link>
         <form
           onSubmit={handleSubmit}
-          className='bg-slate-100 p-3 rounded-lg flex items-center border-2 border-gray-300 '
+          className='bg-slate-50 p-3 rounded-lg flex items-center border-2 border-orange-200 '
         >
           <input
             type='text'
             placeholder='Search...'
-            className='bg-transparent focus:outline-none w-24 sm:w-64'
+            className='bg-transparent focus:outline-none w-24 sm:w-64 hover:font-semibold'
             value={searchTerm}
             onChange={(e) => setSearchTerm(e.target.value)}
           />
           <button>
-            <FaSearch className='text-slate-600' />
+            <FaSearch className='text-orange-200 hover:text-orange-400' />
           </button>
         </form>
         <ul className='flex gap-4'>
-          <Link to='/'>
-            <li className='hidden sm:inline text-slate-700 hover:font-semibold px-1'>
+          <Link to='/' className="flex items-center">
+            <li className='hidden sm:inline items-center text-slate-950 hover:font-semibold px-1'>
               HOME
             </li>
           </Link>
-          {/* <Link to='/faq'>
-            <li className='hidden sm:inline text-slate-700 hover:underline'>
-              FAQs
-            </li>
-          </Link>
-          <Link to='/about'>
-            <li className='hidden sm:inline text-slate-700 hover:underline'>
-              About
-            </li>
-          </Link>
-          <Link to='/contact-us'>
-            <li className='hidden sm:inline text-slate-700 hover:underline'>
-              ContactUs
-            </li>
-          </Link> */}
-          <Link to='/create-listing'>
-            <li className='hidden sm:inline text-slate-700 hover:font-semibold px-1'>
-              POST PROPERTY
-            </li>
+          <Link to='/create-listing' className="flex items-center">
+
+            <div className='flex-wrap items-center bg-orange-400 p-2 rounded-md shadow-md hover:bg-transparent'>
+                <span className='black hover:font-semibold'>POST PROPERTY</span>
+            </div>
+
           </Link>
 
           
 
-          <Link to='/profile'>
+          <Link to='/profile' className="flex items-center">
             {currentUser ? (
               <img
               className='rounded-full h-7 w-7 object-cover'
@@ -101,7 +88,7 @@ export default function Header() {
               alt='profile'
             />
             ) : (
-              <li className=' text-slate-700 hover:underline'> Sign in</li>
+              <li className=' text-slate-950 hover:font-semibold'> SIGN IN</li>
             )}
           </Link>
           
