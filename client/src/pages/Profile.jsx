@@ -158,8 +158,8 @@ export default function Profile() {
 
 
   return (
-    <div className="p-3 max-w-lg mx-auto pt-12">
-      <h1 className="text-3xl font-semibold text-center my-7">Profile</h1>
+    <div className="p-3 max-w-lg mx-auto pt-12 mt-6">
+      <h1 className="text-3xl font-bold text-center my-7 text-orange-600 tracking-wider">PROFILE</h1>
       <form onSubmit={handleSubmit} className="flex flex-col gap-4">
         <input
           onChange={(e) => setFile(e.target.files[0])}
@@ -228,10 +228,10 @@ export default function Profile() {
           onClick={handleDeleteUser}
           className="text-red-700 cursor-pointer"
         >
-          Delete account
+          DELETE ACCOUNT
         </span>
         <span onClick={handleSignOut} className="text-red-700 cursor-pointer">
-          Sign out
+          SIGN OUT
         </span>
       </div>
       <p className="text-red-700 mt-5">{error ? error : ""}</p>
