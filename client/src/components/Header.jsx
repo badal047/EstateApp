@@ -24,7 +24,7 @@ export default function Header() {
     }
   }, [location.search]);
   return (
-    <header className=' shadow-md fixed w-full ' >
+    <header className='bg-blue-700 shadow-md fixed w-full }'  >
       <div className='flex justify-between items-center max-w-6xl mx-auto p-3'>
         <Link to='/'>
           
@@ -36,7 +36,7 @@ export default function Header() {
             {/* Your JSX content */}
             <div>
             <h1 style={{fontFamily: '"Alex Brush", cursive',fontWeight: 600,fontStyle: 'normal',fontSize: '32px'}}>
-              <div className='flex flex-wrap bg-orange-400 p-1 rounded-md shadow-md'>
+              <div className='flex flex-wrap bg-zinc-400 p-1 rounded-md shadow-md'>
                 <span className='black '>Urban</span>
                 <span className='black'>Nest.</span>
               </div>
@@ -66,14 +66,14 @@ export default function Header() {
         </form>
         <ul className='flex gap-4'>
           <Link to='/' className="flex items-center">
-            <li className='hidden sm:inline items-center text-slate-950 hover:font-semibold px-1'>
+            <li className='hidden sm:inline items-center text-slate-950 hover:underline px-1'>
               HOME
             </li>
           </Link>
           <Link to='/create-listing' className="flex items-center">
 
-            <div className='flex-wrap items-center bg-orange-400 p-2 rounded-md shadow-md hover:bg-transparent'>
-                <span className='black hover:font-semibold'>POST PROPERTY</span>
+            <div className='flex-wrap items-center bg-orange-400 p-2 rounded-md shadow-md hover:bg-slate-100'>
+                <span className='black '>POST PROPERTY</span>
             </div>
 
           </Link>

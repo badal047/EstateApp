@@ -1,5 +1,6 @@
 import React from 'react';
 import '../styles/Footer.css'
+import { Link } from 'react-router-dom';
 
 function Footer() {
   return (
@@ -22,19 +23,19 @@ function Footer() {
 
       <div className="footer">
         <div className="row">
-          <a href="#"><i className="fa fa-facebook"></i></a>
-          <a href="#"><i className="fa fa-instagram"></i></a>
-          <a href="#"><i className="fa fa-youtube"></i></a>
-          <a href="#"><i className="fa fa-twitter"></i></a>
+          <a href='https://www.facebook.com' ><i className="fa fa-facebook"></i></a>
+          <a href="https://www.instagram.com"><i className="fa fa-instagram"></i></a>
+          <a href="https://www.youtube.com"><i className="fa fa-youtube"></i></a>
+          <a href="https://www.twitter.com"><i className="fa fa-twitter"></i></a>
         </div>
 
         <div className="row">
           <ul>
-            <li><a href="#">Contact us</a></li>
-            <li><a href="#">Our Services</a></li>
-            <li><a href="#">Privacy Policy</a></li>
-            <li><a href="#">Terms & Conditions</a></li>
-            <li><a href="#">Career</a></li>
+            <li><a href="contact-us">Contact us</a></li>
+            <li><a href="our-services">Our Services</a></li>
+            <li><a href="privacy-policy">Privacy Policy</a></li>
+            <li><a href="termsandconditions">Terms & Conditions</a></li>
+            <li><a href="career">Career</a></li>
           </ul>
         </div>
 

@@ -3,12 +3,12 @@
 @tailwind utilities;
 
 body{
-    background-color: white;
+    background-color: #3DB2FF;
 }
 
 :root {
    
-    --primary: #ff6a3e;
+    --primary: #FD841F;
     --primaryLight: #ffba43;
     --secondary: #ffba43;
     --secondaryLight: #ffba43;
@@ -40,10 +40,13 @@ body {
     text-align: inherit;
     letter-spacing: .1em;
     font-weight: 700;
-    color: var(--primary);
+    /* color: var(--primary); */
+    color:#333A73;
     margin-bottom: 0.25rem;
     display: block;
+    
 }
+
 
 .cs-title {
     font-size: var(--headerFontSize);
