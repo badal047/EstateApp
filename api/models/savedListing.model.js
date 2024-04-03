@@ -1,6 +1,6 @@
 import mongoose from "mongoose"
 
-const savedsearchSchema = new mongoose.Schema(
+const savedListingSchema = new mongoose.Schema(
     {
 
         listing: {
@@ -17,4 +17,4 @@ const savedsearchSchema = new mongoose.Schema(
     }
 );
 
-export const Savedsearch = mongoose.model("Savedsearch", savedsearchSchema);
+export const SavedListing = mongoose.model("SavedListing", savedListingSchema);
