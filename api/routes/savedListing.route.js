@@ -5,7 +5,7 @@ import { verifyToken } from '../utils/verifyUser.js';
 const router = express.Router();
 
 router.post('/toggle/saved/:listingId', verifyToken, toggleListingSave);
-router.get('/user/:userId',verifyToken, getSavedListings);
+router.get('/user',verifyToken, getSavedListings);
 
 
 export default router;
