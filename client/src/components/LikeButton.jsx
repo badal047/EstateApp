@@ -11,17 +11,17 @@ export default function LikeButton(props) {
 
 
     const savedListings = useSelector((state) => state.savedListing.savedListings);
-    console.log(savedListings.data.savedListingsAggregate);
+    console.log(savedListings?.data?.savedListingsAggregate);
 
-    console.log(savedListings.data.savedListingsAggregate);
+    console.log(savedListings?.data?.savedListingsAggregate);
 
-    console.log("ListingName=",listing.name,"active",savedListings.data.savedListingsAggregate.some(item => item._id === listing._id))
+    console.log("ListingName=",listing.name,"active",savedListings?.data?.savedListingsAggregate?.some(item => item._id === listing._id))
     // console.log("ListingId=",listingId,"ItemId",)
 
-    const [active, setActive] = useState(savedListings.data.savedListingsAggregate.some(item => item.savedListing._id === listing._id));
+    const [active, setActive] = useState(savedListings?.data?.savedListingsAggregate?.some(item => item.savedListing._id === listing._id));
 
     useEffect(() => {
-        setActive(savedListings.data.savedListingsAggregate.some(item => item.savedListing._id === listing._id));
+        setActive(savedListings?.data?.savedListingsAggregate?.some(item => item.savedListing._id === listing._id));
     }, [savedListings, listing._id]);
 
 	// const [active, setActive] = useState(isSaved);

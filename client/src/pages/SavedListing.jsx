@@ -21,11 +21,11 @@ const SavedListings = () => {
     {loading ? (
       <p>Loading...</p>
     ) : (
-      savedListings.data.savedListingsAggregate.length === 0 ? (
+      savedListings?.data?.savedListingsAggregate?.length === 0 ? (
         <p>Oops, You have not saved any listing yet</p>
       ) : (
         <div className='flex flex-wrap gap-4'>
-          {savedListings.data.savedListingsAggregate.map((item, index) => (
+          {savedListings?.data?.savedListingsAggregate?.map((item, index) => (
             <div key={index}>
               <ListingItem listing={item.savedListing} key={index} />
             </div>
