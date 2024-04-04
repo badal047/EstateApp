@@ -61,7 +61,7 @@ const getSavedListings = async (req, res,next) => {
         const savedListingsAggregate = await SavedListing.aggregate([
             {
                 $match: {
-                    savedBy: new mongoose.Types.ObjectId(req.user.id),
+                    savedBy: new mongoose.Types.ObjectId(req.user?.id),
                 },
             },
             {
