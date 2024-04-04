@@ -16,6 +16,8 @@ import ContactUs from './pages/ContactUs';
 import Testimonials from './pages/Testimonials';
 import OurServices from './pages/OurServices';
 import OurTeam from './pages/OurTeam';
+import SavedListings from './pages/SavedListing'; 
+
 
 function App() {
   return (
@@ -40,6 +42,7 @@ function App() {
             path='/update-listing/:listingId'
             element={<UpdateListing />}
           />
+          <Route path='/saved-listings' element={<SavedListings />} />
         </Route>
       </Routes>
       <Footer/>

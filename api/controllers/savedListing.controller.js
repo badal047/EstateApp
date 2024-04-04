@@ -140,6 +140,7 @@ const getSavedListings = async (req, res,next) => {
             },
         ]);
 
+        
         return res.status(200).json(new ApiResponse(200, {savedListingsAggregate, userId: req.user.id}, "Saved listings fetched successfully "));
     } catch (error) {
         // Handle errors
