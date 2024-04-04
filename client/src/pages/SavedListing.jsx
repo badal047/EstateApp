@@ -17,7 +17,7 @@ const SavedListings = () => {
   return (
     
     <div className='max-w-6xl mx-auto pt-16 flex flex-col gap-8 my-10'>
-    <h2 className='text-2xl font-bold text-slate-700'>SAVED LISTINGS</h2>
+    <h2 className='text-2xl font-bold text-slate-700 text-center'>SAVED LISTINGS</h2>
     {loading ? (
       <p>Loading...</p>
     ) : (

@@ -1,7 +1,10 @@
 import { Link } from 'react-router-dom';
 import { MdLocationOn } from 'react-icons/md';
+import LikeButton from './LikeButton'
+
 
 export default function ListingItem({ listing }) {
+  // console.log(listing._id)
   return (
     <div className='bg-white shadow-md hover:shadow-lg transition-shadow overflow-hidden rounded-lg w-full sm:w-[330px]'>
       <Link to={`/listing/${listing._id}`}>
@@ -44,9 +47,14 @@ export default function ListingItem({ listing }) {
                 ? `${listing.bathrooms} baths `
                 : `${listing.bathrooms} bath `}
             </div>
+            
           </div>
+          
         </div>
       </Link>
+      <div >
+            <LikeButton listing={listing} />
+      </div>
     </div>
   );
 }
