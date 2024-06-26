@@ -16,53 +16,53 @@ const MeetTheTeam = () => {
                     <li className="cs-item">
                         <picture className="cs-picture">
                             {/* Mobile Image */}
-                            <source media="(max-width: 600px)" srcSet="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/gallery1.jpg" />
+                            <source media="(max-width: 600px)" srcSet="https://thumbs.dreamstime.com/b/cheerful-business-lady-holding-beverage-smiling-relaxed-businesswoman-36427323.jpg" />
                             {/* Tablet and above Image */}
-                            <source media="(min-width: 601px)" srcSet="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/gallery1.jpg" />
-                            <img loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/gallery1.jpg" alt="person" width="305" height="407" />
+                            <source media="(min-width: 601px)" srcSet="https://thumbs.dreamstime.com/b/cheerful-business-lady-holding-beverage-smiling-relaxed-businesswoman-36427323.jpg" />
+                            <img loading="lazy" decoding="async" src="https://thumbs.dreamstime.com/b/cheerful-business-lady-holding-beverage-smiling-relaxed-businesswoman-36427323.jpg" alt="person" width="305" height="407" />
                         </picture>
                         <div className="cs-info">
-                            <span className="cs-name">Hanna Green</span>
-                            <span className="cs-job">Tax Advisor</span>
+                            <span className="cs-name">Maya Patel </span>
+                            <span className="cs-job">CEO(Chief Enthusiasm Officer)</span>
                         </div>
                     </li>
                     <li className="cs-item">
                         <picture className="cs-picture">
                             {/* Mobile Image */}
-                            <source media="(max-width: 600px)" srcSet="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/gallery1.jpg" />
+                            <source media="(max-width: 600px)" srcSet="https://wallpapercave.com/wp/wp7047913.jpg" />
                             {/* Tablet and above Image */}
-                            <source media="(min-width: 601px)" srcSet="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/gallery1.jpg" />
-                            <img loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/gallery1.jpg" alt="person" width="305" height="407" />
+                            <source media="(min-width: 601px)" srcSet="https://wallpapercave.com/wp/wp7047913.jpg" />
+                            <img loading="lazy" decoding="async" src="https://wallpapercave.com/wp/wp7047913.jpg" alt="person" width="305" height="407" />
                         </picture>
                         <div className="cs-info">
-                            <span className="cs-name">Hanna Green</span>
-                            <span className="cs-job">Tax Advisor</span>
+                            <span className="cs-name">Gaur Gopal</span>
+                            <span className="cs-job">Head of Client Relations  </span>
                         </div>
                     </li>
                     <li className="cs-item">
                         <picture className="cs-picture">
                             {/* Mobile Image */}
-                            <source media="(max-width: 600px)" srcSet="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/gallery1.jpg" />
+                            <source media="(max-width: 600px)" srcSet="https://akm-img-a-in.tosshub.com/indiatoday/images/story/202306/annamalai-sixteen_nine.jpg?VersionId=nXjrjycrjP3fJ5T5aFKZVyvS6K1yunl_" />
                             {/* Tablet and above Image */}
-                            <source media="(min-width: 601px)" srcSet="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/gallery1.jpg" />
-                            <img loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/gallery1.jpg" alt="person" width="305" height="407" />
+                            <source media="(min-width: 601px)" srcSet="https://akm-img-a-in.tosshub.com/indiatoday/images/story/202306/annamalai-sixteen_nine.jpg?VersionId=nXjrjycrjP3fJ5T5aFKZVyvS6K1yunl_" />
+                            <img loading="lazy" decoding="async" src="https://akm-img-a-in.tosshub.com/indiatoday/images/story/202306/annamalai-sixteen_nine.jpg?VersionId=nXjrjycrjP3fJ5T5aFKZVyvS6K1yunl_" alt="person" width="305" height="407" />
                         </picture>
                         <div className="cs-info">
-                            <span className="cs-name">Hanna Green</span>
-                            <span className="cs-job">Tax Advisor</span>
+                            <span className="cs-name">Annamalai</span>
+                            <span className="cs-job">Negotiation Specialist (Master of the Deal)</span>
                         </div>
                     </li>
                     <li className="cs-item">
                         <picture className="cs-picture">
                             {/* Mobile Image */}
-                            <source media="(max-width: 600px)" srcSet="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/gallery1.jpg" />
+                            <source media="(max-width: 600px)" srcSet="https://i1.sndcdn.com/artworks-000107664907-cja6vv-t500x500.jpg" />
                             {/* Tablet and above Image */}
-                            <source media="(min-width: 601px)" srcSet="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/gallery1.jpg" />
-                            <img loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/gallery1.jpg" alt="person" width="305" height="407" />
+                            <source media="(min-width: 601px)" srcSet="https://i1.sndcdn.com/artworks-000107664907-cja6vv-t500x500.jpg" />
+                            <img loading="lazy" decoding="async" src="https://i1.sndcdn.com/artworks-000107664907-cja6vv-t500x500.jpg" alt="person" width="305" height="407" />
                         </picture>
                         <div className="cs-info">
-                            <span className="cs-name">Hanna Green</span>
-                            <span className="cs-job">Tax Advisor</span>
+                            <span className="cs-name">Keshav Goswami </span>
+                            <span className="cs-job">Marketing Specialist</span>
                         </div>
                     </li>
                     {/* Repeat similar structure for other team members */}

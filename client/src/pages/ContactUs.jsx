@@ -51,7 +51,7 @@ const ContactUs = () => {
                 </div>
                 <div className="cs-contact-group">
                     <p className="cs-text">
-                        There are many variations of passages of available but the majority have suffered alteration in some form, by injected randomized words even slightly believable.
+                        Your real estate journey doesn't have to be a solo adventure. Partner with Urban Nest and let's find your perfect urban space together.
                     </p>
                     <ul className="cs-ul">
                         <li className="cs-li">

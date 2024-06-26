@@ -27,6 +27,7 @@
         flex-direction: column;
         /* centers content horizontally, set to flex-start to left align */
         align-items: center;
+        
     }
 
     #services-285 .cs-card-group {

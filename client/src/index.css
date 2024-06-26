@@ -66,7 +66,8 @@ body {
     width: 100%;
     max-width: 40.625rem;
     margin: 0;
-    color: var(--bodyTextColor);
+    /* color: var(--bodyTextColor); */
+    color: black;
 }
 
 header {
@@ -75,3 +76,4 @@ header {
     width: 100%;
     z-index: 1000; /* Ensure header is above FAQ section */
 }
+

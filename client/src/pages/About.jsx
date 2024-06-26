@@ -9,7 +9,7 @@ const About = () => {
                     <span className="cs-topper">Who We Are</span>
                     <h2 className="cs-title">About Our Company</h2>
                     <p className="cs-text">
-                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Expedita provident consequuntur, asperiores nisi ut fugiat harum quo inventore, molestias vero cumque dolorum eligendi odio neque illo dolores tempore natus non sit nostrum nam sint. Amet maxime vel inventore culpa soluta?
+                        Frustrated by impersonal city real estate, Maya and Gaur of a better way. In a cozy coffee shop corner, Urban Nest was born. Focused on genuine connections and client dreams, their small operation thrived. Today, a vibrant team guides urban dwellers on their real estate journeys, and the future promises continued growth and innovation.
                     </p>
                     <a href="" className="cs-button-solid">More About Us</a>
                 </div>

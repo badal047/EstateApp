@@ -35,7 +35,7 @@
         text-align: inherit;
         letter-spacing: 0.1em;
         font-weight: 700;
-        color: var(--primary);
+
         margin-bottom: 0.25rem;
         display: block;
     }
@@ -59,7 +59,7 @@
         width: 100%;
         max-width: 40.625rem;
         margin: 0;
-        color: var(--bodyTextColor);
+
     }
     #meet-team-1332 .cs-card-group {
         width: 100%;
