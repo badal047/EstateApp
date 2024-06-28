@@ -15,6 +15,9 @@ import Faq from './pages/Faq';
 import ContactUs from './pages/ContactUs';
 import Testimonials from './pages/Testimonials';
 import OurServices from './pages/OurServices';
+import PrivacyPolicy from './pages/PrivacyPolicy';
+import TermsConditions from './pages/TermsConditions';
+import Career from './pages/Career';
 import OurTeam from './pages/OurTeam';
 import SavedListings from './pages/SavedListing'; 
 
@@ -33,6 +36,9 @@ function App() {
         <Route path='/contact-us' element={<ContactUs />} />
         <Route path='/faq' element={<Faq />} />
         <Route path='/testimonials' element={<Testimonials />} />
+        <Route path='/privacy-policy' element={<PrivacyPolicy />} />
+        <Route path='/termsandconditions' element={<TermsConditions />} />
+        <Route path='/career' element={<Career />} />
         <Route path='/search' element={<Search />} />
         <Route path='/listing/:listingId' element={<Listing />} />
         <Route element={<PrivateRoute />}>
