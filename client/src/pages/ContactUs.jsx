@@ -31,6 +31,14 @@ const ContactUs = () => {
         // Here you can use the formData object for further processing, such as sending it to a server or performing client-side validation.
         console.log(formData);
         // Reset the form after submission
+
+
+        const mailtoLink = `mailto:${'2021ugec047@nitjsr.ac.in'}?subject=Regarding ${'Contacting Urban Nest'}&body=${encodeURIComponent(message)}`;
+
+        // Open the default email client when clicking the link
+        window.location.href = mailtoLink;
+
+
         setFormData({
             name: '',
             email: '',
